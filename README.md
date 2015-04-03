@@ -3,4 +3,4 @@
 Swift example of swipe away gesture
 
 Screencast:
-<img src="https://cloud.githubusercontent.com/assets/10542894/6979225/a6e44552-d9e0-11e4-9ce0-cfda825f4855.gif" />
+<img src="https://cloud.githubusercontent.com/assets/10542894/6979398/6720faa2-d9e3-11e4-9d36-eda8f21b77e1.gif" />
