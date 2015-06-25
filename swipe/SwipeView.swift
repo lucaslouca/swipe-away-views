@@ -7,14 +7,10 @@ enum DisappearDirection {
 }
 
 class SwipeView: UIView {
-    let screenSize: CGRect!
+    var screenSize: CGRect!
     var panGestureRecognizer : UIPanGestureRecognizer!
     var originalPoint:CGPoint!
-    
-    override init(){
-        super.init()
-    }
-    
+
     override init(frame: CGRect){
         super.init(frame : frame)
         screenSize = UIScreen.mainScreen().bounds
@@ -90,7 +86,7 @@ class SwipeView: UIView {
             }, completion: {success in })
     }
     
-    func removeViewFromParentWithAnimation(#disappearDirection:DisappearDirection){
+    func removeViewFromParentWithAnimation(disappearDirection disappearDirection:DisappearDirection){
         var animations:(()->Void)!
         switch disappearDirection {
         case .Left:
